@@ -72,7 +72,7 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
         if (menu.tags && menu.tags.includes(tag))
           if (menu.help) groups[tag].push(menu)
     }
- conn.fakeReply(m.chat, `📺 IKLAN BOT:\n*OPEN EDIT BY GANZ*\n╰ *DAFTAR BARANG*\n\n*_1.LOGO JB_*\n*_2.LOGO ANIME\n*_3.LOGO GAMING_*\n*_4.LOGO GUILD_*\n*_5.LOGO SQUAD_*\n*_6.LOGO PRIBADI_*\n\n*🔥LAST MAKE*\n*_1.E-SERTIFIKAT_*\n*_2. ALL POSTER_*\n*_3. JASA SPAM VIRTEX_*\n*_4.JUAL DM FF MURAH LEGAL AXIS MET_*\n*_5.TUTOR SCAM_*\n\n💰ALL TUTORIAL:\nCUMAN 3K AJA\n*JELAS AMANAH*\n╰ *TAKE ALL 10K MURAH!*\n\nHASIL BAGUS\n*VIA GOPAY*\n*JANGAN LUPA BAWA DANA!*\n\n*OPEN TUTORIAL BYE ERIK GANZ*\n*👉CHAT SEGERA*\n*http://Wa.me/+6283819654409?text=Assalamualaikum+Kak`, `0@s.whatsapp.net`, `JB STORE`)
+ conn.fakeReply(m.chat, `📺 IKLAN BOT:\n*OPEN EDIT BY GANZ*\n╰ *DAFTAR BARANG*\n\n*_1.LOGO JB_*\n*_2.LOGO ANIME\n*_3.LOGO GAMING_*\n*_4.LOGO GUILD_*\n*_5.LOGO SQUAD_*\n*_6.LOGO PRIBADI_*\n\n*🔥LAST MAKE*\n*_1.E-SERTIFIKAT_*\n*_2. ALL POSTER_*\n*_3. JASA SPAM VIRTEX_*\n*_4.JUAL DM FF MURAH LEGAL AXIS MET_*\n*_5.TUTOR SCAM_*\n\n💰ALL TUTORIAL:\nCUMAN 3K AJA\n*JELAS AMANAH*\n╰ *TAKE ALL 10K MURAH!*\n\nHASIL BAGUS\n*VIA GOPAY*\n*JANGAN LUPA BAWA DANA!*\n\n*OPEN TUTORIAL BYE ERIK GANZ*\n*👉CHAT SEGERA*\n*http://Wa.me/+62895369318181?text=Assalamualaikum+Kak`, `0@s.whatsapp.net`, `JB STOREKU`)
     conn.menu = conn.menu ? conn.menu : {}
     let before = conn.menu.before || `
  Hai, %name!
@@ -89,10 +89,10 @@ Database: %rtotalreg of %totalreg
 MASUKIN BOT SEGERA 👇
 *CHAT OWNER CUY*
 👥 *My Owner*
-╰  Wa.me/6283819654409
+╰  Wa.me/62895369318181
 
 📲 *JOIN US*
-╰ https://chat.whatsapp.com/DQL06vhp0Op1LUcS2tbi7c
+╰ https://chat.whatsapp.com/
 
 IKLAN JB STORE :
 DI => #iklan
@@ -100,7 +100,7 @@ DI => #iklan
     let header = conn.menu.header || '╭─「 %category 」'
     let body   = conn.menu.body   || '│ • %cmd%islimit'
     let footer = conn.menu.footer || '╰────\n'
-    let after  = conn.menu.after  || (conn.user.jid == global.conn.user.jid ? '' : `Powered by https://wa.me/${global.conn.user.jid.split`@`[0]}`) + `\n💰DONASI:\n*HUBUNGI: http://Wa.me/+6283819654409?text=Assalamualaikum+Kak\n\n*NOMOR UNTUK DONASI*:\n*083819654409 (AXIS)*`
+    let after  = conn.menu.after  || (conn.user.jid == global.conn.user.jid ? '' : `Powered by https://wa.me/${global.conn.user.jid.split`@`[0]}`) + `\n💰DONASI:\n*HUBUNGI: http://Wa.me/+6283819654409?text=Assalamualaikum+Kak\n\n*NOMOR UNTUK DONASI*:\n*0895369318181 (TRI)*`
     let _text  = before + '\n'
     for (let tag in groups) {
       _text += header.replace(/%category/g, tags[tag]) + '\n'
